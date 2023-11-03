@@ -11,7 +11,6 @@ body {
     #000 100%
   );
 }
-
 #quiz {
   display: flex;
   justify-content: center;
@@ -20,7 +19,6 @@ body {
   height: 900px;
   background: linear-gradient(129deg, #996dff 8.18%, #633bbc 95.51%);
 }
-
 #container {
   width: 1060px;
   height: 786px;
@@ -32,7 +30,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 #Screen {
   width: 842px;
   height: 657.7px;
@@ -42,7 +39,6 @@ body {
   align-items: center;
   gap: 69px;
 }
-
 #head {
   width: 100%;
   height: 48px;
@@ -52,9 +48,7 @@ body {
   justify-content: space-between;
   gap: auto;
 }
-
 #Pontuacao {
-  border: 1px solid green;
   width: 83px;
   height: 48px;
   display: flex;
@@ -63,7 +57,6 @@ body {
   flex-direction: row;
   gap: 6px;
 }
-
 #Icon {
   width: 24px;
   height: 24px;
@@ -71,7 +64,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 #Acertos {
   width: 13px;
   height: 24px;
@@ -79,7 +71,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 #Acertos p {
   font-family: Sora;
   font-size: 20px;
@@ -88,7 +79,6 @@ body {
   line-height: 110%;
   margin: 0;
 }
-
 #head p {
   width: auto;
   height: auto;
@@ -99,7 +89,6 @@ body {
   font-weight: 400;
   line-height: 110%;
 }
-
 #Text h1 {
   width: 413.6px;
   height: 58px;
@@ -112,7 +101,6 @@ body {
   line-height: 120%;
   margin: 0;
 }
-
 #opcoes {
   width: 842px;
   height: 300px;
@@ -120,7 +108,6 @@ body {
   flex-direction: row;
   gap: 46px;
 }
-
 #Card1,
 #Card2,
 #Card3 {
@@ -128,7 +115,7 @@ body {
   height: 208px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  align-items: center;
   padding: 46px 32px;
   border-radius: 8px;
   border-top: 3.194px solid var(--colors-base-grey-3, #252c3a);
@@ -137,37 +124,31 @@ body {
   border-left: 3.194px solid var(--colors-base-grey-3, #252c3a);
   background: var(--colors-base-grey-4, #1d2330);
 }
-
 input[type="radio"] {
-  position: absolute;
-  margin-top: -30px;
-  margin-left: 180px;
-  font-size: 20px;
   width: 24px;
   height: 24px;
-  border: 1px solid rgb(27, 26, 25);
   background-color: blue;
+  margin-left: auto;
 }
-
 label {
   color: #d9d9d9;
-  width: 186px;
-  height: 208px;
+  width: 100%;
+  height: 100%;
   font-size: 180px;
-  text-align: center;
-  justify-content: center;
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  flex-direction: column;
 }
-
 #footer {
   width: 841.7px;
   height: 44.7px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: auto;
-  align-items: flex-end;
 }
-
 #questoes {
   width: 35px;
   height: 22px;
@@ -176,12 +157,11 @@ label {
   gap: 4px;
   align-items: center;
 }
-
 #questoesRestantes {
   width: 14px;
   height: 22px;
+  margin: 0;
 }
-
 #questoesRestantes p {
   color: var(--colors-base-grey-1, #d9d9d9);
   font-family: Sora;
@@ -191,12 +171,10 @@ label {
   line-height: 110%;
   margin: 0;
 }
-
 #questoesFaltam {
   width: 17px;
   height: 13px;
 }
-
 #questoesFaltam p {
   color: var(--colors-base-grey-1, #d9d9d9);
   font-family: Sora;
@@ -223,7 +201,56 @@ label {
   background-color: transparent;
   border: none;
 }
-
 label:active {
   background-color: #626362;
+}
+@media only screen and (max-width: 1490px) {
+  #quiz{
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+  }
+  #container {
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+  }
+  #Screen {
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+    
+  }
+  #opcoes {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  #Card1,
+#Card2,
+#Card3 {
+  width: auto;
+  height: auto;
+  padding: auto;
+}
+#head, #footer {
+ width:100%;
+justify-content: space-evenly;
+}
+label {
+  width: auto;
+  height: auto;
+  font-size: 10vw;
+  
+}
+#Acertos p, #head p, #Text h1, p  {
+  font-size: 2vw;
+}
+input[type="radio"] {
+  width: auto;
+  height: auto;
+}
 }
